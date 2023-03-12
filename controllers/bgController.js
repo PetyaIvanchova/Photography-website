@@ -48,4 +48,13 @@ router.get('/blackandwhite', (req,res) => {
     res.render('bgarticles/blackandwhite',{layout: 'layoutsB.hbs'})
 });
 
+router.get('/prom', (req,res) => {
+    res.render('bgarticles/prom',{layout: 'layoutsB.hbs'})
+});
+
+router.get('/flower', (req,res) => {
+    res.render('bgarticles/flower',{layout: 'layoutsB.hbs'})
+});
+
+
 module.exports = router;

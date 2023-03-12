@@ -48,4 +48,12 @@ router.get('/blackandwhite', (req,res) => {
     res.render('articles/blackandwhite')
 });
 
+router.get('/prom', (req,res) => {
+    res.render('articles/prom')
+});
+
+router.get('/flower', (req,res) => {
+    res.render('articles/flower')
+});
+
 module.exports = router;
