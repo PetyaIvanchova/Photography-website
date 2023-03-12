@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>Snap Studio</title>
+    <link rel="icon" type="image/x-icon" href="/images/cam1.svg">
+    <link rel="stylesheet" href="/css/main.css">
+</head>
+
+<body>
+
+    <!-- header -->
+    <header class="header">
+        <div class="nav-section">
+            <div class="studioandnavbtn">
+                <span class="studioname">
+                    <img src="/images/logostudio.svg">
+                </span>
+                <span class="navBtn flex">
+                    <i class="bar">|||</i>
+                </span>
+            </div>
+
+            <!-- nav -->
+            <nav class="top-nav">
+                <ul>
+                    <li><a class='navnames' href="/en" class="active">Home</a></li>
+                    <li><a class='navnames' href="/en/gallery">Gallery</a></li>
+                    <li><a class='navnames' href="/en/about">About me</a></li>
+                </ul>
+            </nav>
+        </div>
+
+        <div class="container about">
+            <div class="about-content">
+                <div class="about-img flex">
+                    <img src="/images/me2.jpg" alt="photographer img">
+                </div>
+                <h2 class="petya">I'm Petya Ivanchova</h2>
+                <h3>Photographer | Traveller</h3>
+
+            </div>
+
+            <div class="lang">
+                <a class='href' href="/bg">BG</a>
+                <a class='href' href="/en">EN</a>
+            </div>
+        </div>
+    </header>
+    <!-- end header -->
+
+    <!-- main -->
+    {{{body}}}
+    <!-- end main -->
+
+
+    <!-- footer -->
+    <footer class="footer">
+        <div class="footer-container container">
+            <div>
+                <h2>Petya Ivanchova</h2>
+                <p>Photography Studio</p>
+                <p>2023</p>
+            </div>
+            <div>
+                <h1 class="mysocialmedia">My social media</h1>
+                <p class="space"><a class="instagram"
+                        href="https://www.instagram.com/petya_ivanchova/?next=%2F">Instagram</a></p>
+                <p><a class="instagram" href="https://www.pinterest.com/petya_ivanchova/">Pinterest</a></p>
+            </div>
+        </div>
+
+    </footer>
+    <!-- end footer -->
+
+
+    <script>
+        const showBtn = document.querySelector('.navBtn');
+        const topNav = document.querySelector('.top-nav');
+
+        showBtn.addEventListener('click', function () {
+            if (topNav.classList.contains('showNav')) {
+                topNav.classList.remove('showNav');
+            } else {
+                topNav.classList.add('showNav');
+            }
+        });
+
+    </script>
+</body>
+
+</html>

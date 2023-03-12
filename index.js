@@ -6,7 +6,8 @@ const app = express();
 const routes = require('./routes');
 
 app.engine('hbs', hbs.engine({
-    extname: 'hbs'
+    extname: 'hbs',
+    defaultLayout: 'index',
 }));
 app.set('view engine', 'hbs');
 

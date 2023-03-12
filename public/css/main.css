@@ -1,12 +1,13 @@
 @import url('https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400;500;700;900&display=swap');
 
+/*main things*/
 :root {
     --white: #ddd;
     --dark: #111;
     --darkGrey: #474b4f;
     --lightGrey: #6b6e70;
-    --lightGreen: #784a76;
-    --darkGreen: #8b5c84;
+    --lightPink1: #712b88;
+    --darkPink1: #8b5c84;
     --transition: all 0.5s ease;
 }
 
@@ -17,101 +18,25 @@
     font-family: 'Roboto', sans-serif;
 }
 
-body {
-    line-height: 1.6;
-}
-
 img {
     width: 100%;
-    display: block;
 }
 
-ul li {
+/*end main things*/
+
+/*start nav*/
+
+.top-nav ul li {
     list-style: none;
-}
-
-a {
-    text-decoration: none;
-    color: #000;
-}
-
-h1,
-h2,
-h3,
-h4,
-h5,
-h6,
-p {
-    margin: 15px 0;
-}
-
-/********************** Utility Classes *******************/
-.flex {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-}
-
-.container {
-    width: 90vw;
-    margin: 0 auto;
-}
-
-.btn {
-    background: var(--darkGreen);
-    border: none;
-    display: block;
-    width: 150px;
-    text-align: center;
-    color: var(--darkGreen);
-    text-transform: uppercase;
-    background: transparent;
-    font-size: 15px;
-    padding: 12px;
-    border: 2px solid var(--darkGreen);
-    border-radius: 25px;
-    margin: 15px 0;
-    transition: var(--transition);
-}
-
-.btn:hover {
-    background: var(--darkGreen);
-    color: #fff;
-}
-
-
-
-/**************** end of Utility Classes *******************/
-
-/********************** Header styling *********************/
-
-.header {
-    min-height: 80vh;
-    background: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)), url("/images/IMG_0174.jpg") center/cover no-repeat;
-    color: #fff;
 }
 
 .top-nav a {
     color: #fff;
 }
 
-.brand-and-navBtn {
-    background: #000;
-    position: relative;
-    z-index: 999;
-    height: 90px;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    font-weight: 500;
-    font-size: 24px;
-    padding: 15px 25px;
-    color: var(--white);
-}
-
-.brand-name {
-    letter-spacing: 5px;
-    cursor: pointer;
+.navnames{
+    text-decoration: none;
+    color: #000;
 }
 
 .navBtn {
@@ -131,15 +56,11 @@ p {
     background: #000;
     transform: translateY(-600px);
     transition: var(--transition);
-    margin-right: -100px;
+    margin-right: 0px;
 }
 
 .showNav {
     transform: translateY(0);
-}
-
-.search-icon {
-    display: none;
 }
 
 .top-nav ul li {
@@ -157,7 +78,7 @@ p {
 .top-nav ul a::after {
     content: "";
     height: 2px;
-    background: var(--lightGreen);
+    background: var(--lightPink1);
     position: absolute;
     bottom: -5px;
     left: 50%;
@@ -168,6 +89,47 @@ p {
 
 .top-nav ul a:hover::after {
     width: 100px;
+}
+
+/*end nav*/
+
+/*start header*/
+.lang{
+    padding-top: 60px;
+    margin-left: -50px;
+    font-size: 25px;
+    cursor: pointer;
+}
+
+.href{
+    color: var(--white);
+}
+
+.header {
+    min-height: 80vh;
+    width: 800;
+    background: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)), url("/images/IMG_0174.jpg") center/cover no-repeat;
+    color: #fff;
+}
+
+.studioandnavbtn {
+    background: #000;
+    position: relative;
+    height: 90px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    font-weight: 500;
+    font-size: 24px;
+    padding: 15px 25px;
+    color: var(--white);
+}
+
+.studioname {
+    width: 250px;
+    height: 250px;
+    padding-top:40px;
+    margin-left: -30px;
 }
 
 .about {
@@ -191,8 +153,8 @@ p {
 .about-content h2 {
     font-size: 48px;
     text-align: center;
-    margin-bottom: 35px;
-    color: var(--lightGreen);
+    margin-bottom: 33px;
+    color: var(--lightPink1);
 }
 
 .about-content h3 {
@@ -205,61 +167,37 @@ p {
     text-align: center;
 }
 
-blockquote {
-    font-size: 20px;
-    font-weight: 300;
-    opacity: 0.9;
-    width: 60vw;
-    margin: 45px auto 15px auto;
-    text-align: center;
-}
+/*end header*/
 
-blockquote span {
-    font-size: 14px;
-    text-transform: uppercase;
-    color: var(--darkGreen);
-    font-weight: 300;
-    letter-spacing: 5px;
-    display: block;
-}
-
-.social-icons {
-    width: 350px;
-    margin: 40px auto 0 auto;
-    padding-bottom: 30px;
-}
-
-.social-icons ul a {
-    color: #fff;
-    font-size: 30px;
-    display: block;
-    width: 50px;
-    height: 50px;
-    border: 1px solid #fff;
-    border-radius: 50%;
+/*start under header*/
+.flex {
     display: flex;
     justify-content: center;
     align-items: center;
+}
+
+.btn {
+    background: var(--darkPink1);
+    border: none;
+    display: block;
+    width: 150px;
+    text-align: center;
+    color: var(--darkPink1);
+    text-transform: uppercase;
+    background: transparent;
+    font-size: 15px;
+    padding: 12px;
+    border: 2px solid var(--darkPink1);
+    border-radius: 25px;
+    margin: 15px 0;
     transition: var(--transition);
 }
 
-.social-icons ul {
-    display: flex;
-    justify-content: space-around;
+.btn:hover {
+    background: var(--darkPink1);
+    color: #fff;
 }
 
-.social-icons ul a:hover {
-    background: var(--lightGreen);
-    border-color: var(--lightGreen);
-}
-
-/********************* End of Header ***********************/
-
-/*********************** Main section ********************/
-
-/**************** index.html *************/
-
-/* section one */
 .section-one {
     margin: 40px 0;
     min-height: 100vh;
@@ -305,87 +243,45 @@ blockquote span {
     font-weight: 300;
 }
 
-.work-content {
+.nzm-content {
     margin: 50px 0;
 }
 
-.work-imgs {
+.nzm-content h3{
+    padding-bottom: 30px;
+}
+
+.nzm-content p{
+    font-size: larger;
+}
+
+.nzm-imgs {
     display: grid;
     grid-template-columns: repeat(2, 1fr);
     grid-column-gap: 20px;
 }
 
-.work-img-1 {
+.nzm-img-1 {
     background: linear-gradient(rgba(0, 0, 0, 0), rgba(0, 0, 0, 0.6)), url("images/porject-1.jpg") center/cover no-repeat;
     height: 400px;
     transition: var(--transition);
 }
 
-.work-img-2 {
+.nzm-img-2 {
     background: linear-gradient(rgba(0, 0, 0, 0), rgba(0, 0, 0, 0.6)), url("images/porject-2.jpg") center/cover no-repeat;
     height: 400px;
     transition: var(--transition);
 }
 
-.work-imgs div:hover {
+.nzm-imgs div:hover {
     box-shadow: 0 0 8px #000;
     -webkit-box-shadow: 0 0 8px #000;
     -moz-box-shadow: 0 0 8px #000;
 }
+/*end under header*/
 
-
-/* section two */
-.section-two {
-    margin: 40px 0;
-}
-
-.section-two h2 {
-    text-align: center;
-    font-size: 40px;
-}
-
-.section-two span {
-    color: var(--darkGrey);
-    text-align: center;
-    display: block;
-    font-size: 20px;
-    margin-bottom: 30px;
-}
-
-.insta-imgs {
-    display: grid;
-    grid-template-columns: repeat(2, 1fr);
-}
-
-.insta-imgs>div {
-    position: relative;
-}
-
-.icon-overlay {
-    position: absolute;
-    color: #fff;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-    font-size: 50px;
-    background: rgba(134, 194, 50, 0.4);
-    opacity: 0;
-    transition: var(--transition);
-}
-
-.insta-imgs>div:hover .icon-overlay {
-    opacity: 1;
-}
-
-/************* end of index.html ***********/
-
-
-
-/**************** gallery.html ***************/
-
-/* section three */
-.section-three {
+/*start gallery*/
+.maingallery {
     margin: 40px 0;
 }
 
@@ -410,12 +306,19 @@ blockquote span {
     text-transform: uppercase;
 }
 
-/************** end of gallery.html ***********/
+.blackthing{
+    padding-top: 15px;
+    padding-bottom: 15px;
+}
+
+.container {
+    width: 90vw;
+    margin: 0 auto;
+}
+/*end gallery*/
 
 
-
-/******************* Footer Styling *****************/
-
+/*start footer*/
 .footer {
     background: var(--dark);
     color: #fff;
@@ -423,12 +326,17 @@ blockquote span {
     text-align: center;
 }
 
-.footer-container>div {
-    margin: 40px 0;
+.footer h2{
+    padding-top: 20px;
+    padding-bottom: 10px;
+}
+
+.footer p{
+    padding-bottom: 10px;
 }
 
 .footer-container h2 {
-    color: var(--lightGreen);
+    color: var(--lightPink1);
     font-size: 36px;
     font-weight: 500;
     letter-spacing: 7px;
@@ -444,243 +352,55 @@ blockquote span {
 }
 
 .mysocialmedia {
-    color: var(--lightGreen)
+    padding-top: 20px;
+    color: var(--lightPink1)
 }
 
 .instagram {
     color: white;
 }
 
-/******************* end of footer ****************/
+.space{
+    padding-top: 20px;
+}
+/*end footer*/
 
-
-
-/***************** Media Queries *****************/
-
-@media screen and (min-width: 678px) {
-
-    /* section five */
-    .contact-middle {
-        display: grid;
-        grid-template-columns: repeat(2, 1fr);
-        grid-column-gap: 20px;
-    }
+/*Me page*/
+.me{
+    display: flex;
 }
 
-@media screen and (min-width: 800px) {
-
-    /* section two */
-    .insta-imgs {
-        grid-template-columns: repeat(4, 1fr);
-    }
-
-    /* section three */
-    .gallery {
-        display: grid;
-        grid-template-columns: repeat(2, 1fr);
-    }
-
-    /* section four */
-    .blog-wrapper-sm {
-        display: grid;
-        grid-template-columns: repeat(2, 1fr);
-        grid-gap: 20px;
-    }
-
+.left-me{
+    flex: 1;
 }
 
-@media screen and (min-width: 992px) {
-
-    /* header & footer */
-    .nav-section {
-        display: flex;
-        justify-content: space-between;
-    }
-
-    .navBtn {
-        display: none;
-    }
-
-    .brand-and-navBtn {
-        flex: 0 0 10%;
-        background: none;
-    }
-
-    .top-nav {
-        flex: 0 1 80%;
-        display: flex;
-        justify-content: flex-end;
-        align-items: center;
-        transition: transform 0s ease;
-        transform: translateY(0);
-        background: transparent;
-    }
-
-    .top-nav ul {
-        display: flex;
-    }
-
-    .top-nav ul li {
-        margin-right: 30px;
-        margin-left: 30px;
-    }
-
-    .about {
-        margin-top: 0;
-    }
-
-    .search-icon {
-        flex: 0 0 10%;
-        display: block;
-        display: flex;
-        justify-content: center;
-        align-items: center;
-        font-size: 24px;
-        cursor: pointer;
-        transition: var(--transition);
-    }
-
-    .search-icon i:hover {
-        transform: scale(1.2);
-    }
-
-    /* section five */
-    .contact-middle {
-        grid-template-columns: repeat(4, 1fr);
-    }
-
-    .contact-bottom {
-        display: grid;
-        grid-template-columns: repeat(2, 1fr);
-        grid-column-gap: 40px;
-    }
+.left-me img{
+    margin-left: 110px;
+    margin-top: 30px;
+    margin-bottom: 20px;
+    width: 250px;
+    height: 450px;
 }
 
-
-@media screen and (min-width: 1000px) {
-
-    /* section one */
-    .section-one .container {
-        display: grid;
-        grid-template-columns: repeat(2, 1fr);
-        grid-column-gap: 50px;
-    }
-
-    .sec-one-left {
-        align-self: center;
-    }
-
-    .work-content {
-        margin-top: 0;
-    }
-
-    .sec-one-left {
-        height: 100%;
-    }
-
-    /* section four */
-    .blog-wrapper-lg {
-        display: grid;
-        grid-template-columns: repeat(2, 1fr);
-        grid-gap: 20px;
-    }
-
-    /* footer */
-    .footer-container {
-        display: grid;
-        grid-template-columns: repeat(2, 1fr);
-        grid-gap: 20px;
-    }
+.textme{
+    flex: 1;
+    padding-right: 120px;
 }
 
-@media screen and (min-width: 1200px) {
-
-    /* footer */
-    .footer-container>div {
-        width: 60%;
-        margin-left: auto;
-        margin-right: auto;
-    }
-
-    /* section three */
-    .gallery {
-        grid-template-columns: repeat(3, 1fr);
-    }
+.myname{
+    text-align: center;
+    padding-top: 50px;
 }
 
-@media screen and (min-width: 1400px) {
-
-    /* section four */
-    .blog-wrapper-sm {
-        grid-template-columns: repeat(4, 1fr);
-    }
+.myp{
+    font-size: larger;
+    padding-top: 20px;
+    padding-bottom: 20px;
 }
+/*end me page*/
 
-/*************** extra small sized screen ******************/
+/*galleryparts*/
 
-@media screen and (max-width: 500px) {
-
-    /* overall styling */
-    .header {
-        padding-bottom: 30px;
-    }
-
-    .social-icons {
-        display: none;
-    }
-
-    .about-content h3 {
-        width: 100%;
-    }
-
-    .about-content blockquote {
-        font-size: 16px;
-        width: 100%;
-    }
-
-    .subs {
-        width: 280px;
-    }
-
-    .subs i {
-        display: none;
-    }
-
-    .subs input {
-        width: 100%;
-    }
-
-    .subs button {
-        padding-left: 8px;
-        padding-right: 8px;
-    }
-
-    h2 {
-        font-size: 30px !important;
-    }
-
-    h3 {
-        font-size: 20px !important;
-    }
-
-    p {
-        font-size: 15px;
-    }
-
-    .btn {
-        font-size: 14px;
-        padding: 8px 0;
-    }
-
-    .work-imgs {
-        grid-template-columns: 1fr;
-        grid-row-gap: 20px;
-    }
-}
-
-
-
-/* About Section */
 .wedding {
     display: flex;
     padding-bottom: 20px;
@@ -718,17 +438,18 @@ blockquote span {
     font-size: 4rem;
     font-weight: 300;
     color: black;
-    margin-bottom: 10px;
+    margin-top: 30px;
+    margin-bottom: 30px;
     text-transform: uppercase;
     letter-spacing: 0.2rem;
     text-align: center;
 }
 
 .section-title span {
-    color: var(--darkGreen);
+    color: var(--darkPink1);
 }
 
-/* End About Section */
+
 
 /*weddingsecond*/
 
@@ -765,11 +486,14 @@ blockquote span {
 
 .third-part .thirdname{
     padding-top: 120px;
-    padding-left: 110px;
+    padding-right: 90px;
+    padding-bottom: 20px;
+    font-size: 40px;
 }
 
 .third-part .thirdp{
-    padding-right: 60px;
+    padding-right: 90px;
+    font-size: 20px;
 }
 
 .euphoria{
@@ -811,34 +535,144 @@ blockquote span {
     height: 420px;
 }
 
-.me{
-    display: flex;
+@media screen and (min-width: 800px) {
+
+    .gallery {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+    }
+
 }
 
-.left-me{
-    flex: 1;
+@media screen and (min-width: 992px) {
+
+   
+    .nav-section {
+        display: flex;
+        justify-content: space-between;
+    }
+
+    .navBtn {
+        display: none;
+    }
+
+    .studioandnavbtn {
+        flex: 0 0 10%;
+        background: none;
+    }
+
+    .top-nav {
+        flex: 0 1 80%;
+        display: flex;
+        justify-content: flex-end;
+        align-items: center;
+        transition: transform 0s ease;
+        transform: translateY(0);
+        background: transparent;
+    }
+
+    .top-nav ul {
+        display: flex;
+    }
+
+    .top-nav ul li {
+        margin-right: 30px;
+        margin-left: 30px;
+    }
+
+    .about {
+        margin-top: 0;
+    }
+
+    
 }
 
-.left-me img{
-    margin-left: 100px;
-    margin-top: 30px;
-    margin-bottom: 30px;
-    border: 5px solid #555;
-    width: 320px;
-    height: 450px;
+
+@media screen and (min-width: 1000px) {
+
+    
+    .section-one .container {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        grid-column-gap: 50px;
+    }
+
+    .sec-one-left {
+        align-self: center;
+    }
+
+    .nzm-content {
+        margin-top: 0;
+    }
+
+    .sec-one-left {
+        height: 100%;
+    }
+    .footer-container {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        grid-gap: 20px;
+    }
 }
 
-.textme{
-    flex: 1;
-    padding-right: 120px;
+@media screen and (min-width: 1200px) {
+
+   
+    .footer-container>div {
+        width: 60%;
+        margin-left: auto;
+        margin-right: auto;
+    }
+
+    
+    .gallery {
+        grid-template-columns: repeat(3, 1fr);
+    }
 }
 
-.myname{
-    text-align: center;
-    padding-top: 30px;
+
+
+@media screen and (max-width: 500px) {
+
+    
+    .header {
+        padding-bottom: 30px;
+    }
+
+    .about-content h3 {
+        width: 100%;
+    }
+
+    .about-content  {
+        font-size: 16px;
+        width: 100%;
+    }
+
+
+    h2 {
+        font-size: 30px ;
+    }
+
+    h3 {
+        font-size: 20px ;
+    }
+
+    p {
+        font-size: 15px;
+    }
+
+    .btn {
+        font-size: 14px;
+        padding: 8px 0;
+    }
+
+    .nzm-imgs {
+        grid-template-columns: 1fr;
+        grid-row-gap: 20px;
+    }
 }
 
-.myp{
-    font-size: larger;
-}
+
+
+
 

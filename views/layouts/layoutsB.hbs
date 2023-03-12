@@ -4,8 +4,8 @@
 <head>
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <title>Photography Site</title>
-    <meta name="viewport" content="width=device-width, intial-scale=1.0">
+    <title>Snap Studio</title>
+    <link rel="icon" type="image/x-icon" href="/images/cam1.svg">
     <link rel="stylesheet" href="/css/main.css">
 </head>
 
@@ -14,65 +14,66 @@
     <!-- header -->
     <header class="header">
         <div class="nav-section">
-            <div class="brand-and-navBtn">
-                <span class="brand-name">
-                    Photography Studio
+            <div class="studioandnavbtn">
+                <span class="studioname">
+                    <img src="/images/logostudio.svg">
                 </span>
                 <span class="navBtn flex">
-                    <i class="fas fa-bars">|||</i>
+                    <i class="bar">|||</i>
                 </span>
             </div>
 
-            <!-- navigation menu -->
+            <!-- nav -->
             <nav class="top-nav">
                 <ul>
-                    <li><a href="/" class="active">Home</a></li>
-                    <li><a href="/gallery">Gallery</a></li>
-                    <li><a href="/about">About me</a></li>
+                    <li><a class='navnames' href="/bg" class="active">Начало</a></li>
+                    <li><a class='navnames' href="/bg/gallery">Галерия</a></li>
+                    <li><a class='navnames' href="/bg/about">За мен</a></li>
                 </ul>
             </nav>
-            <span class="search-icon">
-                <i class="fas fa-search"></i>
-            </span>
         </div>
 
         <div class="container about">
             <div class="about-content">
                 <div class="about-img flex">
-                    <img src="./images/me2.jpg" alt="photographer img">
+                    <img src="/images/me2.jpg" alt="photographer img">
                 </div>
-                <h2>I'm Petya Ivanchova</h2>
-                <h3>Photographer | Traveller</h3>
+                <h2>Петя Иванчова</h2>
+                <h3>Фотограф | Пътешественик</h3>
 
             </div>
 
-
+            <div class="lang">
+                <a class='href' href="/bg">BG</a>
+                <a class='href' href="/en">EN</a>
+            </div>
         </div>
     </header>
-    <!-- end of header -->
+    <!-- end header -->
 
     <!-- main -->
     {{{body}}}
-    <!-- end of main -->
+    <!-- end main -->
 
 
     <!-- footer -->
     <footer class="footer">
         <div class="footer-container container">
             <div>
-                <h2>Petya Ivanchova</h2>
-                <p>Photography Studio</p>
-                <p>@2023</p>
+                <h2>Петя Иванчова</h2>
+                <p>Snap Studio</p>
+                <p>2023</p>
             </div>
             <div>
-                <h1 class="mysocialmedia">My social media</h1>
-                <p><a class="instagram" href="https://www.instagram.com/petya_ivanchova/?next=%2F">Instagram</a></p>
+                <h1 class="mysocialmedia">Последвайте ме:</h1>
+                <p class="space"><a class="instagram"
+                        href="https://www.instagram.com/petya_ivanchova/?next=%2F">Instagram</a></p>
                 <p><a class="instagram" href="https://www.pinterest.com/petya_ivanchova/">Pinterest</a></p>
             </div>
         </div>
 
     </footer>
-    <!-- end of footer -->
+    <!-- end footer -->
 
 
     <script>
@@ -82,15 +83,11 @@
         showBtn.addEventListener('click', function () {
             if (topNav.classList.contains('showNav')) {
                 topNav.classList.remove('showNav');
-                showBtn.innerHTML = '<i class = "fas fa-bars"></i>';
             } else {
                 topNav.classList.add('showNav');
-                showBtn.innerHTML = '<i class = "fas fa-times"></i>';
             }
         });
 
-        /* Lightbox */
-        var lightbox = new SimpleLightbox('.gallery a', { /* options */ });
     </script>
 </body>
 
