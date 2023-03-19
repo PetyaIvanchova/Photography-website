@@ -15,4 +15,4 @@ app.use(express.urlencoded({extended: false}));
 app.use(express.static('public'));
 app.use(routes);
 
-app.listen(6007);
+app.listen(process.env.PORT || 6007);
