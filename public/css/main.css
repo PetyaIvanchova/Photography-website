@@ -262,13 +262,13 @@ img {
 }
 
 .nzm-img-1 {
-    background: linear-gradient(rgba(0, 0, 0, 0), rgba(0, 0, 0, 0.6)), url("images/porject-1.jpg") center/cover no-repeat;
+    background: linear-gradient(rgba(0, 0, 0, 0), rgba(0, 0, 0, 0.6)), url("/images/IMG_0174.jpg") center/cover no-repeat;
     height: 400px;
     transition: var(--transition);
 }
 
 .nzm-img-2 {
-    background: linear-gradient(rgba(0, 0, 0, 0), rgba(0, 0, 0, 0.6)), url("images/porject-2.jpg") center/cover no-repeat;
+    background: linear-gradient(rgba(0, 0, 0, 0), rgba(0, 0, 0, 0.6)), url("/images/IMG_0174.jpg") center/cover no-repeat;
     height: 400px;
     transition: var(--transition);
 }
