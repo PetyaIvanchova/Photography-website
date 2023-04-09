@@ -162,7 +162,7 @@ img {
     font-size: 30px;
     font-weight: 100;
     background: rgba(255, 255, 255, 0.1);
-    width: 400px;
+    width: 500px;
     margin: 35px auto;
     text-align: center;
 }
@@ -465,8 +465,8 @@ img {
 
 .left-part img{
     border: 5px solid #555;
-    width: 320px;
-    height: 450px;
+    width: 280px;
+    height: 420px;
 }
 
 .second-part{
@@ -475,8 +475,8 @@ img {
 
 .second-part img{
     border: 5px solid #555;
-    width: 320px;
-    height: 450px;
+    width: 280px;
+    height: 420px;
 }
 
 .third-part{

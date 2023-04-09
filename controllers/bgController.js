@@ -16,20 +16,12 @@ router.get('/birthday', (req,res) => {
     res.render('bgarticles/birthday',{layout: 'layoutsB.hbs'})
 });
 
-router.get('/kids', (req,res) => {
-    res.render('bgarticles/christmas',{layout: 'layoutsB.hbs'})
-});
-
-router.get('/christmasphoto', (req,res) => {
-    res.render('bgarticles/vilichristmas',{layout: 'layoutsB.hbs'})
+router.get('/newspaper', (req,res) => {
+    res.render('bgarticles/newspaper',{layout: 'layoutsB.hbs'})
 });
 
 router.get('/marketing', (req,res) => {
     res.render('bgarticles/thshirt',{layout: 'layoutsB.hbs'})
-});
-
-router.get('/euphoria', (req,res) => {
-    res.render('bgarticles/euphoria',{layout: 'layoutsB.hbs'})
 });
 
 router.get('/nightphotos', (req,res) => {
@@ -41,7 +33,7 @@ router.get('/about', (req,res) => {
 });
 
 router.get('/portrait', (req,res) => {
-    res.render('bgarticles/irina',{layout: 'layoutsB.hbs'})
+    res.render('bgarticles/portrait',{layout: 'layoutsB.hbs'})
 });
 
 router.get('/blackandwhite', (req,res) => {

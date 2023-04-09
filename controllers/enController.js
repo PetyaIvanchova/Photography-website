@@ -16,20 +16,12 @@ router.get('/birthday', (req,res) => {
     res.render('articles/birthday')
 });
 
-router.get('/kids', (req,res) => {
-    res.render('articles/christmas')
-});
-
-router.get('/christmasphoto', (req,res) => {
-    res.render('articles/vilichristmas')
+router.get('/newspaper', (req,res) => {
+    res.render('articles/newspaper')
 });
 
 router.get('/marketing', (req,res) => {
     res.render('articles/thshirt')
-});
-
-router.get('/euphoria', (req,res) => {
-    res.render('articles/euphoria')
 });
 
 router.get('/nightphotos', (req,res) => {
@@ -41,7 +33,7 @@ router.get('/about', (req,res) => {
 });
 
 router.get('/portrait', (req,res) => {
-    res.render('articles/irina')
+    res.render('articles/portrait')
 });
 
 router.get('/blackandwhite', (req,res) => {
